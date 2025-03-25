@@ -54,10 +54,6 @@ int main(int argc, char *argv[]) {
     DieWithSystemMessage("connect() failed");
   }
   
-  char local_buffer[1024];
-  struct sockaddr temp;
-  int getsockname(sock, , local_buffer);
-  
   // Receive data from the Server to verify if friendly
   char in_buffer[BUFSIZE];
   std::string pass_phrase{"hello world"};
@@ -99,3 +95,8 @@ int main(int argc, char *argv[]) {
   close(sock);
   exit(0);
 }
+
+
+
+
+
