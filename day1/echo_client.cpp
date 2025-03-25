@@ -19,7 +19,7 @@
 int main(int argc, char *argv[]) {
     if (argc < 3 || argc > 4) {
         DieWithUserMessage("Parameter(s)",
-            "<Server Address> <Echo Work> [<Server Port>]");
+            "<Server Address> <Echo Word> [<Server Port>]");
     }
     char *server_ip = argv[1];   // Server IP address
     char *echo_string = argv[2]; // Second arg: string to echo
