@@ -1,8 +1,11 @@
 ## Creating and Destroying Sockets
+
 If we want to communicate using TCP or UDP, a program begins by asking the OS to create an instance of the socket abstraction. The function to perform this task is `socket()`; its parameters specify the flavor of the socket needed by our program:
+
 ```cpp
 int socket(int domain, int type, int protocol);
 ```
+
 - Parameter 1 determines the communication domain of the socket. The socket API provides a generic interface for a large number of communication domains; however we are interested in IPv4 (`AF_INET`) and IPv6(`AF_INET6`).
 
 - Parameter 2 specifies the type of socket. The type determines the semantics of data transmission with the socket, i.e., if the transmission is reliable, if message boundaries are preserved, and so on. The constant `SOCK_STREAM` specifies a socket with reliable byte-stream semantics, where as `SOCK_DGRAM` specifies a best-effort datagram socket.

@@ -12,3 +12,7 @@ add_executable(ex_client day1_exercises/echo_client.cpp)
 add_executable(ex_server day1_exercises/echo_server.cpp)
 
 add_executable(getaddrinfo day1/getaddrinfo.cpp)
+
+add_executable(day3 day3/main.cpp)
+add_executable(bd_client day3/broadcast_client.cpp)
+add_executable(bd_server day3/broadcast_server.cpp)
